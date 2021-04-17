@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trial 1</title>
+  <link rel="stylesheet" href="../static/style.css" type="text/css"/>
+  <link rel="stylesheet" href="../static/all.css">
+  <link rel="stylesheet" href={{cdn_css | safe}} type="text/css"/>
+</head>
+<body>
+  <!-- navigation menu -->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#">
+                  <img src="../static/assets/haryana-logo-3.jpg">
+                </a>
+            </div>
+            <div class="toggle-collapse noClick">
+                <div class="toggle-icons noClick">
+                    <i id="hamburger-menu" class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="underline-transition"></span>
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="underline-transition"></span>
+                            ABOUT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navigation menu end -->
+
+    <!-- main site section -->
+    <main>
+      <section class="blogPage-title">
+          <h1>Traffic Data Display</h1>
+      </section>
+
+      <section class="content">
+        <div class="contentWrapper">
+          <div class="mainContent">
+              <p>Traffic light status and density of traffic metrics will be displayed for a given traffic light.</p>
+
+              <h2>Data Table</h2>
+              <hr>
+              <p>Table is shown below</p>
+
+              <table class="dataTable">
+                <tr>
+                  <th>Road_ID</th>
+                  <th>Light Status</th>
+                  <th>Traffic Density</th>
+                </tr>
+                <tr class="rowFocus">
+                  <td>1234567</td>
+                  <td>{{ data1 }}</td>
+                  <td>{{ data2 }}</td>
+                </tr>
+                <tr class="rowFocus">
+                  <td>1234568</td>
+                  <td>{{ data1 }}</td>
+                  <td>{{ data2 }}</td>
+                </tr>
+                <tr class="rowFocus">
+                  <td>1234569</td>
+                  <td>{{ data1 }}</td>
+                  <td>{{ data2 }}</td>
+                </tr>
+              </table>
+              
+              <br><br>
+              {{div1 | safe}}
+
+              <!-- <h3>Tags</h3>
+              <div class="tags">
+                  <span>#traffic</span>
+                  <span>#sachin</span>
+                  <span>is</span>
+                  <span>#gay</span>
+              </div> -->
+
+
+              </div>
+            </div>
+            <aside class="sideBar">
+              <p>             </P>
+              <br>
+            </aside>
+        </div>
+      </section>
+    </main>
+    <!-- main site section ends -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="aboutMe">
+                <h3>About</h3>
+                <p>Traffic web server is a IoT project which demonstrates smart traffic lights, traffic management and obtaining real time traffic data from surveillance cameras as a proof of concept.</p>
+            </div>
+
+            <div class="newsLetter">
+                <h3>Web Information</h3>
+                <ul>
+                  <li><a href="#">
+                    Data sources
+                  </a></li>
+                  <li><a href="#">
+                    Managing department
+                  </a></li>
+                  <li><a href="">
+                    Permits
+                  </a></li>
+                  <li><a href="">
+                    A-Z index
+                  </a></li>
+                  <li><a href="">
+                    Privacy
+                  </a></li>
+                  <li><a href="">Legal Disclaimer
+                  </a></li>
+                  <li><a href="">
+                    Web accessibility
+                  </a></li>
+                </ul>
+            </div>
+            <div class="followMe">
+                <h3>Contact</h3>
+                <ul>
+                  <li><a href="">
+                    Divisions/Bureaus
+                  </a></li>
+                  <li><a href="">
+                    Feedback
+                  </a></li>
+                  <li><a href="">
+                    Pothole Reporting
+                  </a></li>
+                  <li><a href="">
+                    Regional Offices
+                  </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <span>
+            Copyright &copy;2021 All rights reserved | HARYANA State Govt. (sample)
+            </span>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i>
+            </span>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <!-- jQuery library file -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- custom script -->
+    <script src="../static/main.js"></script>
+    <!-- bokeh script -->
+    <script type="text/javascript" src={{cdn_js | safe}}></script>
+    {{script1 | safe}}
+</body>
+
+</html>

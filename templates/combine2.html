@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>trial 1</title>
+  <!-- <link rel="stylesheet" href="../static/style.css" type="text/css"/>
+  <link rel="stylesheet" href="../static/all.css"> -->
+  <link rel="stylesheet" href={{cdn_css | safe}} type="text/css"/>
+</head>
+<body>
+  <h1>Traffic Data Display</h1>
+	<h3> Data1 &nbsp; ==>  {{ data1 }} </h3>
+	<h3> Data2 &nbsp; ==>  {{ data2 }} </h3>
+
+
+    <!-- jQuery library file -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <!-- custom script -->
+  <!-- <script src="../static/main.js"></script> -->
+    <script type="text/javascript" src={{cdn_js | safe}}></script>
+
+    {{script1 | safe}}
+    {{div1 | safe}}
+</body>
+<!-- <script type="text/javascript" src={{cdn_js | safe}}></script>
+
+{{script1 | safe}} -->
+
+
+</html>
