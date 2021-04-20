@@ -91,7 +91,7 @@ def home():
 
 
 if __name__ == "__main__":
-	app.run(port=80, host="40.80.89.188")
+	app.run(port=443, host="0.0.0.0")
     
     
         
