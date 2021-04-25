@@ -80,7 +80,7 @@ def plot(lat, lng, zoom=17, map_type='roadmap'):
     
     
     car_coords, car_coords_x, car_coords_y, red_x, red_y = vehicle_dots()
-    print(car_coords)
+    # print(car_coords)
     # see how we set radius instead of size:
     center = p.circle(car_coords_x, car_coords_y, size=10, alpha=0.5, 
                       color='blue')
@@ -110,7 +110,7 @@ def home():
     from bokeh.embed import components
     from bokeh.resources import CDN
     
-    url = 'https://docs.google.com/spreadsheets/d/1YwfjtMZMRtv9pflrrPjVqj4OIHv6RmEccHKCHCrwKqQ/export?format=csv&gid=0'
+    url = 'https://docs.google.com/spreadsheets/d/1rVeqyiW_yNP7WqjDH1-dHVZGjs4NS21sOwY4V9BRHhA/export?format=csv&gid=0'
     df = pd.read_csv(url)
     plot_graph(df)
     
