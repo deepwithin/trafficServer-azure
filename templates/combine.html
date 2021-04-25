@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <meta http-equiv="refresh" content="2" >
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>trial 1</title>
+  <title>Traffic Statistics</title>
   <link rel="stylesheet" href="../static/style.css" type="text/css"/>
   <link rel="stylesheet" href="../static/all.css">
   <link rel="stylesheet" href={{cdn_css | safe}} type="text/css"/>
@@ -52,7 +53,7 @@
       <section class="content">
         <div class="contentWrapper">
           <div class="mainContent">
-              <p>Traffic light status and density of traffic metrics will be displayed for a given traffic light.</p>
+              <p>Traffic density metrics along with timestamp will be displayed for a given traffic light.</p>
 
               <h2>Data Table</h2>
               <hr>
@@ -60,38 +61,39 @@
 
               <table class="dataTable">
                 <tr>
-                  <th>Road_ID</th>
-                  <th>Light Status</th>
+                  <th>Time Stamp</th>
                   <th>Traffic Density</th>
+                  <th>Eergency Vehicles</th>
                 </tr>
                 <tr class="rowFocus">
-                  <td>1234567</td>
+                  <td>{{ t1 }}</td>
                   <td>{{ data1 }}</td>
-                  <td>{{ data2 }}</td>
+                  <td>{{ em1 }}</td>
                 </tr>
                 <tr class="rowFocus">
-                  <td>1234568</td>
-                  <td>{{ data1 }}</td>
+                  <td>{{ t2 }}</td>
                   <td>{{ data2 }}</td>
+                  <td>{{ em2 }}</td>
                 </tr>
                 <tr class="rowFocus">
-                  <td>1234569</td>
-                  <td>{{ data1 }}</td>
-                  <td>{{ data2 }}</td>
+                  <td>{{ t3 }}</td>
+                  <td>{{ data3 }}</td>
+                  <td>{{ em3 }}</td>
+                </tr>
+                <tr class="rowFocus">
+                  <td>{{ t4 }}</td>
+                  <td>{{ data4 }}</td>
+                  <td>{{ em4 }}</td>
                 </tr>
               </table>
-              
+
               <br><br>
               {{div1 | safe}}
 
-              <!-- <h3>Tags</h3>
-              <div class="tags">
-                  <span>#traffic</span>
-                  <span>#sachin</span>
-                  <span>is</span>
-                  <span>#gay</span>
-              </div> -->
-
+              <br>
+              <img src="../static/assets/foo.png" alt="graph">
+              <br>
+              <br>
 
               </div>
             </div>
